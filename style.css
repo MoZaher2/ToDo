@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --ToDobackground: #0A4D68;
+    --ToDocomponent: #05BFDB;
+    --ToDocover: #05dbbba2;
+    --ToDobutton: #00FFCA;
+    --Textcolor: #4477CE;
+}
+
+body {
+    background-color: black;
+}
+
+.center {
+    width: 65%;
+    margin: 20px auto;
+}
+
+/* Add Task */
+
+.addcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont {
+    width: 100%;
+    background-color: var(--ToDobackground);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addtext,.edittext {
+    width: 80%;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color: var(--ToDocomponent);
+    font-weight: bold;
+    font-style: italic;
+}
+.edittext{
+    display: none;
+}
+
+.addbtn {
+    width: 10%;
+    font-size: 30px;
+    height: 50%;
+    margin-right: 25px;
+    border-radius: 11px;
+    border: none;
+    box-shadow: 8px 8px;
+    background-color: var(--ToDobutton);
+    color: var(--Textcolor);
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 10px 0px;
+    color: var(--Textcolor);
+}
+
+/* ToDo List */
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todocontainer {
+    width: 100%;
+    background-color: var(--ToDobackground);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    justify-content: space-between;
+}
+
+[type="checkbox"] {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.todospan {
+    width: 80%;
+    height: 50%;
+    font-size: 30px;
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color: var(--ToDocomponent);
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.todobtn {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: 0px 3%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.editbtn,
+.deletebtn {
+    width: 75%;
+    min-width: 80px;
+    font-size: 25px;
+    border-radius: 11px;
+    border: none;
+    background-color: var(--ToDobutton);
+    color: var(--Textcolor);
+    cursor: pointer;
+    margin: 3px 0px;
+}
+
+/* ToDone List */
+
+.todone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donecontainer {
+    width: 100%;
+    background-color: var(--ToDobackground);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.donespan {
+    width: 80%;
+    height: 50%;
+    font-size: 30px;
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color: var(--ToDocomponent);
+    font-weight: bold;
+    overflow: hidden;
+    opacity: 50%;
+    text-decoration: line-through;
+}
+
+.donebtn {
+    width: 15%;
+}
